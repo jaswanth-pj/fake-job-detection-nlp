@@ -1,0 +1,142 @@
+/* ===== ADMIN DASHBOARD ===== */
+
+.admin-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #e5e7eb;
+  padding: 30px 50px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* HEADER */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.admin-header h2 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+/* HEADER ACTION BUTTONS */
+.admin-actions button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #1e293b;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.admin-actions button:hover {
+  background: #38bdf8;
+  color: #020617;
+}
+
+/* STATS */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.stat-card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 22px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+}
+
+.stat-card p {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.stat-card h3 {
+  margin-top: 8px;
+  font-size: 22px;
+  color: #38bdf8;
+}
+
+/* TABLE */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #020617;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #1e293b;
+}
+
+.admin-table th {
+  background: #020617;
+  color: #94a3b8;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.admin-table tr:hover {
+  background: #020617;
+}
+
+/* ROLE TAGS */
+.role-admin {
+  color: #22c55e;
+  font-weight: 600;
+}
+
+.role-user {
+  color: #facc15;
+  font-weight: 600;
+}
+
+/* ACTION BUTTONS IN TABLE */
+.admin-table button {
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-promote {
+  background: #22c55e;
+  color: #020617;
+}
+
+.btn-demote {
+  background: #ef4444;
+  color: #fff;
+}
+
+.admin-table button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* FLAGGED POSTS SECTION */
+h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #e5e7eb;
+}

@@ -1,0 +1,100 @@
+/* Full screen background */
+.home-page {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #a4acc4, #9333ea);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Glass card */
+.home-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  padding: 50px 45px;
+  border-radius: 20px;
+  text-align: center;
+  width: 520px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+  animation: fadeUp 1s ease;
+}
+
+.home-card h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.home-card p {
+  color: #e5e7eb;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+/* Buttons */
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.home-buttons button {
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Login button */
+.login-btn {
+  background: #ffffff;
+  color: #1e3a8a;
+  font-weight: bold;
+}
+
+.login-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+/* Signup button */
+.signup-btn {
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.signup-btn:hover {
+  background: #ffffff;
+  color: #1e3a8a;
+  transform: translateY(-3px);
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .home-card {
+    width: 90%;
+    padding: 35px 25px;
+  }
+
+  .home-card h1 {
+    font-size: 28px;
+  }
+}

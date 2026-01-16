@@ -1,0 +1,114 @@
+/* Page background */
+.detect-page {
+  min-height: 100vh;
+  padding: 100px 40px 40px;
+  background: linear-gradient(135deg, #0f172a, #1e1b4b, #312e81);
+  color: #ffffff;
+}
+
+/* Hero section */
+.detect-hero {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 60px;
+  animation: fadeDown 1s ease;
+}
+
+.detect-hero h1 {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.detect-hero p {
+  font-size: 17px;
+  color: #c7d2fe;
+  line-height: 1.6;
+}
+
+/* Panels layout */
+.detect-panels {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+/* Glass cards */
+.detect-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px);
+  padding: 30px;
+  border-radius: 22px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+  animation: fadeUp 1s ease;
+}
+
+.detect-card h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #e0e7ff;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding-bottom: 10px;
+}
+
+/* Make inner forms beautiful automatically */
+.detect-card textarea,
+.detect-card input,
+.detect-card button {
+  width: 100%;
+  margin-top: 12px;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+}
+
+/* Button style */
+.detect-card button {
+  background: linear-gradient(90deg, #6366f1, #9333ea);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.detect-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .detect-panels {
+    grid-template-columns: 1fr;
+  }
+
+  .detect-hero h1 {
+    font-size: 32px;
+  }
+}
