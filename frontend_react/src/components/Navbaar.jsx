@@ -16,12 +16,12 @@ function Navbaar() {
 
   return (
     <nav className="navbar">
-      {/* LEFT */}
+     
       <div className="nav-left">
         Fake Job Detection
       </div>
 
-      {/* RIGHT */}
+      
       <div className="nav-right">
         {/* 🔥 WRAPPER IS THE KEY FIX */}
         <div className="user-wrapper">
@@ -35,7 +35,7 @@ function Navbaar() {
           {open && (
             <div className="dropdown">
 
-              {/* 🔐 ADMIN ONLY */}
+           
               {role === "admin" && (
                 <div
                   className="dropdown-item admin-item"

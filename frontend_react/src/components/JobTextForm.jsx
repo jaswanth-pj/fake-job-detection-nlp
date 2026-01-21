@@ -25,7 +25,7 @@ function JobTextForm() {
     setLoading(false);
   };
 
-  // 🏴 FLAG FEEDBACK FUNCTION (THIS IS THE JS YOU ASKED ABOUT)
+ 
   const handleFlag = async () => {
     try {
       await fetch(

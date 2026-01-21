@@ -49,7 +49,7 @@ function ForgotPassword() {
           onChange={(e) => setEmail(e.target.value)}
         />
 
-        {/* New Password */}
+       
         <div className="password-wrapper">
           <input
             type={showPassword ? "text" : "password"}
@@ -64,7 +64,6 @@ function ForgotPassword() {
           </span>
         </div>
 
-        {/* Confirm New Password */}
         <div className="password-wrapper">
           <input
             type={showConfirmPassword ? "text" : "password"}

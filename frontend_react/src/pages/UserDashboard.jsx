@@ -42,7 +42,7 @@ function UserDashboard() {
 
   return (
     <div className="user-dashboard">
-      {/* HEADER */}
+      
       <div className="user-header">
         <h2>User Dashboard</h2>
         <button  className="dash-back-btn"onClick={() => navigate("/detect")}>
@@ -50,7 +50,7 @@ function UserDashboard() {
         </button>
       </div>
 
-      {/* STATS */}
+    
       <div className="stats-grid">
         <div className="stat-card">
           <p>Total Detections</p>
@@ -68,7 +68,7 @@ function UserDashboard() {
         </div>
       </div>
 
-      {/* CHARTS */}
+     
       <div className="chart-section">
         <div className="chart-card">
           <div className="chart-title">

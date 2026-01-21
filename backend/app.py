@@ -32,13 +32,10 @@ def clean_text(text):
 
 SCAM_KEYWORDS = [
     "telegram",
-    "whatsapp",
     "no interview",
     "pan card",
-    "aadhaar",
     "bank details",
     "verification fee",
-    "registration fee",
     "pay fee",
     "immediate joining",
     "contact hr directly"

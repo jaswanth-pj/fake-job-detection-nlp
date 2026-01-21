@@ -20,14 +20,14 @@ function PredictionHistory() {
       });
   }, []);
 
-  /* 🔽 DOWNLOAD HISTORY FUNCTION */
+ 
   const downloadHistory = () => {
     if (history.length === 0) {
       alert("No history to download");
       return;
     }
 
-    // CSV header
+  
     let csv = "Result,Date,Text\n";
 
     history.forEach((item) => {
@@ -52,7 +52,7 @@ function PredictionHistory() {
 
   return (
     <div className="history-container">
-      {/* TOP ACTIONS */}
+    
       <div className="history-actions">
         <button
           className="history-back-btn"

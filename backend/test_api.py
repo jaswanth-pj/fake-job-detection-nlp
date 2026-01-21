@@ -1,9 +1,6 @@
 import pickle
 import pandas as pd
 
-# -------------------------
-# Load Saved Models
-# -------------------------
 with open("./model/tfidf_vectorizer.pkl", "rb") as f:
     tfidf = pickle.load(f)
 
@@ -12,9 +9,7 @@ with open("./model/logistic_model.pkl", "rb") as f:
 
 
 
-# -------------------------
-# Test Samples
-# -------------------------
+
 test_texts = [
   " We are looking for a Senior Software Engineer to join our Bangalore development team. The "
   "candidate must have strong experience in Python, Django, and REST APIs. You will wor"
@@ -34,18 +29,13 @@ test_texts = [
     "Earn  500 per month for a full stack developer,reqired four years of experience "
 ]
 
-# -------------------------
-# Prediction Function
-# -------------------------
+
 def get_predictions(text):
     X = tfidf.transform([text])
     logi_pred = logistic_model.predict(X)[0]
    
     return logi_pred
 
-# -------------------------
-# Build Results Table
-# -------------------------
 results = []
 
 for text in test_texts:

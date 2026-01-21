@@ -40,7 +40,7 @@ function AdminDashboard() {
 
     alert("Role updated. User must login again.");
 
-    // Optional: refresh admin data
+    
     const res = await fetch("http://127.0.0.1:5000/admin/dashboard");
     const updated = await res.json();
     setData(updated);

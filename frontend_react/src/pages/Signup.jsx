@@ -69,7 +69,7 @@ function Signup() {
           </span>
         </div>
 
-        {/* Confirm Password */}
+       
         <div className="password-wrapper">
           <input
             type={showConfirmPassword ? "text" : "password"}

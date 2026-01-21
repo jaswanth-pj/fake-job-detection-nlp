@@ -10,7 +10,7 @@
   function DetectJob() {
     const navigate = useNavigate();
 
-    // 🔐 Protect page (no login → redirect)
+    
     useEffect(() => {
       const loggedIn = localStorage.getItem("isLoggedIn");
       if (!loggedIn) {
@@ -27,7 +27,7 @@
 
       
 
-        {/* Hero */}
+      
         <div className="detect-hero">
           <h1>Fake Job Detection</h1>
           <p>
@@ -36,7 +36,7 @@
           </p>
         </div>
 
-        {/* Detection Panels */}
+        
         <div className="detect-panels">
           <div className="detect-card">
             <h2>Text-Based Detection</h2>
