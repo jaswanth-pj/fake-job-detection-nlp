@@ -180,7 +180,7 @@ This project demonstrates an effective approach to detecting fake job postings u
 Author
 
 Pallikonda Penchala Jaswanth 
-Internship Project – Infosys Springboot
+Internship Project – Infosys Springboard
 
 GitHub Repository
 https://github.com/jaswanth-pj/fake-job-detection-nlp
